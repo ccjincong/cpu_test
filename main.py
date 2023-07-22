@@ -52,6 +52,10 @@ for server, params in config['SSH'].items():
     filtered_lines = [line.replace('llama_print_timings:', '') for line in filtered_lines]
     filtered_lines = [line[line.find('=') + 1:] for line in filtered_lines]
 
+    with open(file_name, 'w') as f:
+        f.writelines(filtered_lines)
+
+
     for i, line in enumerate(filtered_lines):
         if i > 4:
             print(line)
