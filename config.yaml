@@ -9,9 +9,9 @@ thread: 32
 
 SSH:
   s6_32c:
-    ip_address: 42.194.225.167
-    username: root
-    password: sztu2023!
+    ip_address: ***
+    username: **
+    password: **
 
 instruction:
   1: Give three tips for staying healthy.
